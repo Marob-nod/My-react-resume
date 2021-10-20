@@ -1,0 +1,65 @@
+@import '../../styles.scss';
+
+.home {
+    &__content {
+        background: linear-gradient(115deg, $color-2 0%, $color-4 100%);
+        //display: flex;
+        text-align: left;
+        align-items: center;
+        min-height: $minHeight;
+        width: 100%;
+        min-height: 500px;
+        border-radius: $borderRadius;
+        position: relative;
+        overflow: hidden;
+        
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: inherit;
+            //background: url('../../assets/wallpaper.jpg') no-repeat center/cover;
+            z-index: -1;
+            filter: brightness(0%);
+        }
+
+        &__text {
+            position: absolute;
+            top: 15%;
+            left: 7%;
+            font-family: $font-1;
+            padding: 50px;
+
+            h1 {
+                font-size: 4rem;
+                font-family: $font-2;
+                color: $color-1;
+                text-transform: uppercase;
+                text-shadow: 3px 6px 2px $black;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 3rem;
+                color: $color-4;
+                text-shadow: 1px 4px 1px $black;
+                padding: 20px;
+            }
+            p {
+                color: $color-5;
+                font-size: 1.1rem;
+                font-weight: 500;
+                padding: 20px;
+                background: rgba( 255, 255, 255, 0.3 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 8px );
+                -webkit-backdrop-filter: blur( 8px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                margin: 20px;
+            }
+        }
+
+
+    }
+}

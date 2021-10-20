@@ -1,0 +1,173 @@
+@import '../../styles.scss';
+
+.sidebar {
+    background: $color-1;
+    font-family: $font-1;
+    height: 100%;
+    min-height: $minHeight;
+    width: 264px;
+    border-radius: $borderRadius;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr 108px;
+    grid-template-areas: "1" "2" "3";
+
+    &__id {
+        grid-area: 1;
+        text-align: center;
+        user-select: none;
+        position: relative;
+
+        &__content {
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100px;
+                box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-5, 0 0 0 12px $color-2;
+            }
+            h1 {
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                margin-top: 1.5rem;
+                color: $color-5;
+            }
+        }
+    }
+    &__navigation {
+        grid-area: 2;
+        padding: 2rem 1rem;
+        text-align: left;
+        
+        ul {
+            height: 100%;
+            display: grid;
+
+            li {
+                padding: 1rem 0 1rem 0.4rem;
+                font-size: 1.3rem;
+                position: relatve;
+                
+
+                &:hover img{
+                    transform: translate(3px, 3px);
+                }
+            }
+            a {
+                color: $color-5;
+            }
+            .navActive {
+                color: $color-4;
+            }
+            img {
+                
+                font-size: 0.95rem;
+                transform: translateY(3px);
+                transition: 0.2s ease; 
+            }
+            span {
+                margin-left: 1.5rem;
+            }
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__socialnetwork {
+        grid-area: 3;
+
+        ul {
+            display: flex;
+            width: 264px;
+            padding: 0 14px;
+            justify-content: space-around;
+        }
+        li {
+            font-size: 1.5rem;
+            color: $color-1;
+            border-radius: 50%;
+            padding: 0.5rem;
+            transition: 0.3s;
+            cursor: pointer;
+
+            a:visited {
+                color: $color-1;
+            }
+            &:hover {
+                background: rgba($color: $color-4 , $alpha: 0.4);
+                transition: 0.5s ease-in-out;
+            }
+
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    &__signature {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+
+        p {
+            color: $color-5;
+
+            &:hover {
+                color: $color-4;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sidebar {
+        display: flex;
+        min-height: 50px;
+        margin-bottom: 0.2rem;
+        width: 100%;
+
+        &__id, &__socialnetwork, &__signature {
+            display: none;
+        }
+        &__navigation {
+            width: 100%;
+            padding: 0.1rem 1rem;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 660px) {
+    .sidebar {
+        ul {
+            justify-content: space-around !important;
+
+            li {
+                padding: 1rem 0 !important;
+            }
+            i {
+                font-size: 1.4rem !important;
+                transform: translateY(-3px) !important;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+}
