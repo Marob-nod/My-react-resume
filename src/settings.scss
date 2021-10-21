@@ -37,7 +37,7 @@ body {
     -webkit-backdrop-filter: blur( 9.5px );
     border-radius: $borderRadius;
     //border: 1px solid rgba( 255, 255, 255, 0.18 );
-    background: linear-gradient(to top,$color-1 0%, $color-2 0%, $color-3 );
+    background: linear-gradient(to top,$color-1 0%, $color-2 0%, $color-3 ) no-repeat;
 }
 button {
     cursor: pointer;

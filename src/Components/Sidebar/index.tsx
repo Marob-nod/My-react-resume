@@ -15,7 +15,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar__id">
         <div className="sidebar__id__content">
-          <img src={profilPicture} className="sidebar__id__content-photo" alt="photo profil" />
+          <img src={profilPicture} className="sidebar__id__content-photo" alt="profil" />
           <h1>Robin Marien</h1>
 
         </div>
@@ -52,12 +52,12 @@ const Sidebar = () => {
       <div className="sidebar__socialnetwork">
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/robin-marien-64a571135/" target="_blank" rel="Linkedin">
+            <a href="https://www.linkedin.com/in/robin-marien-64a571135/" target="_blank" rel="noreferrer">
               <img src={linkedinIcon} alt="linkedin-Icon" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Marob-nod" target="_blank" rel="Github">
+            <a href="https://github.com/Marob-nod" target="_blank" rel="noreferrer">
               <img src={githubIcon} alt="github-Icon" />
             </a>
           </li>
@@ -65,7 +65,7 @@ const Sidebar = () => {
       </div>
       <div className="sidebar__signature">
         <p>fromReact - 2021</p>
-      </div>
+      </div> 
       
     </div>
   );

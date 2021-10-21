@@ -1,0 +1,41 @@
+@import '../../settings.scss';
+
+.error {
+    height: 95vh;
+    max-width: 1200px;
+    @include verticalCenter;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+        transform: translateY(5px);
+        margin-right: 5px;
+    }
+
+    .button-container {
+        padding: 1rem 0 1rem 0.4rem;
+        padding: 1rem 2rem;
+        border-radius: $borderRadius;
+        background: $color-1;
+        width: 12em;
+        height: 5em;
+        display: flex;
+        justify-content: space-around;
+
+        &:hover {
+            cursor: pointer;
+            font-weight: 600;
+            transition: font-weight 0.2s ease-in-out;
+        }
+        
+    }
+    .button-content {
+        font-size: 1.3rem;    
+    }
+    
+}
