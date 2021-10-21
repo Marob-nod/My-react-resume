@@ -1,7 +1,14 @@
 import './styles.scss';
 import React from 'react';
+import { FC } from 'react';
 
-const ProgressBar = ({ languages, className, title }) => {
+interface ProgressBarProps {
+    languages: {id: number; value: string; xp: number}[];
+    className: string;
+    title: string;
+}
+
+const ProgressBar:FC<ProgressBarProps> = ({ languages, className, title }) => {
 
   return (
     <div className="progressBar">
