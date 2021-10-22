@@ -28,7 +28,7 @@ const OtherSkills = () => {
                     <div className="otherskills-list">
                         <ul>
                             <li><i className="fas fa-check-square"></i>Gestion de projet: Méthode agile</li>
-                            <li><i className="fas fa-check-square"></i>Management: Accompagnement - Inclusion</li>
+                            <li><i className="fas fa-check-square"></i>Management: Accompagnement</li>
                             <li><i className="fas fa-check-square"></i>Experience UI/UX</li> 
                             <li><i className="fas fa-check-square"></i>Créatif</li>
                             <li><i className="fas fa-check-square"></i>Anglais - TOEIC 920</li>
