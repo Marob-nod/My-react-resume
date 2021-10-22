@@ -41,14 +41,7 @@
         grid-area: H;
     }
 
-    .skills-container {
-        grid-area: O;
-        display: flex;
-        flex-direction: column;
-    }
     .skills {
-        display: flex;
-        justify-content: flex-start;
         padding-top: 0.5rem;
 
         li {
@@ -80,15 +73,14 @@
             }
         }
     }
-    .container-otherskills {
-        display: flex;
-        justify-content: space-between;
-    }
+
+
     .framework-list {
        display: grid;
-       margin: 10px;
        grid-template-columns: 50% 50%;
        grid-template-areas: "E F";
+       grid-area: H;
+    
 
        &-1 {
         grid-area: E ;
@@ -98,6 +90,7 @@
         font-size: .65rem;
         display: flex;
         justify-content: space-between;
+        margin-top: $internalGutter;
 
         span {
             width: 36%;
@@ -114,7 +107,7 @@
                 content: '';
                 background: rgba(180,179,179,0.5);
                 position: absolute;
-                height: 146px;
+                height: 250px;
                 width: 1px;
                 transform: translate(9px, 19px);
             }
@@ -122,4 +115,27 @@
     }
 
 
+}
+.skills-container {
+    grid-area: O;
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    grid-template-columns: 50% 1fr;
+    grid-template-areas: 
+        "I J"
+        "I K";
+
+    .skills {
+        grid-area: I;
+        margin-right: $externalGutter;
+    }
+    .otherskills__frameworks {
+        grid-area: J;
+        margin-bottom: $externalGutter;
+        padding-top: 0.5rem;
+
+    }
+    .otherskills_profil {
+        grid-area: K;
+    }
 }

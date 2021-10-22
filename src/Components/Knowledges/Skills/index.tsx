@@ -15,16 +15,13 @@ const Skills = () => {
         {id: 1, value: "React", xp: 1.0, logo: logoReact},
         {id: 1, value: "Javascript", xp: 1.5, logo: logoJs},
         {id: 2, value: "CSS", xp: 2, logo: logoCSS},
-        {id: 3, value: "HTML", xp: 2, logo: logoHtml},
-        {id: 4, value: "C/C++", xp: 0.5, logo: logoC},
+        {id: 3, value: "HTML", xp: 2, logo: logoHtml}
     ]);
     const otherTechs = ["Redux","Axios","Jest","TypeScript","SASS","Babel","Webpack","Git/GitHub","Netlify"];
 
   return (
     <div className="skills">
-      <div>
-        <ProgressBar languages={languages} className="languages-display" title="Languages"/>
-      </div>
+      <ProgressBar languages={languages} className="languages-display" title="Languages"/>
     </div>
   )
 };

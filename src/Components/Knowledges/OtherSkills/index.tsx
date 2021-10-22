@@ -9,7 +9,7 @@ const OtherSkills = () => {
                     <h3>Techs</h3>
                     <div className="framework-list">
                         <ul className="framework-list-1">
-                            <li><i className="fas fa-check-square"></i>Git GitHub</li>
+                            <li><i className="fas fa-check-square"></i>Git - GitHub</li>
                             <li><i className="fas fa-check-square"></i>Redux</li>
                             <li><i className="fas fa-check-square"></i>Axios</li>
                             <li><i className="fas fa-check-square"></i>Jest</li>
