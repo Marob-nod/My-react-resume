@@ -3,7 +3,7 @@ import React from 'react';
 import { FC } from 'react';
 
 interface ProgressBarProps {
-    languages: {id: number; value: string; xp: number}[];
+    languages: {id: number; value: string; xp: number; logo: string}[];
     className: string;
     title: string;
 }
@@ -11,7 +11,7 @@ interface ProgressBarProps {
 const ProgressBar:FC<ProgressBarProps> = ({ languages, className, title }) => {
 
   return (
-    <div className="progressBar">
+    <div className="progressBar-container">
         <h3>{title}</h3>
         <div className="years">
             <span>Années d'experience</span>
@@ -27,11 +27,11 @@ const ProgressBar:FC<ProgressBarProps> = ({ languages, className, title }) => {
 
                     return (
                         <div key={language.id} className="languages-list">
+                            <img src={language.logo} alt={language.value}/>
                             <li>{language.value}</li>
                             <div className="progressBar" style={{width:progressBar}}></div>
                         </div>
                     )
-
                 })
             }
         </div>

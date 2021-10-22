@@ -3,7 +3,7 @@ import './styles.scss';
 const Experience = () => {
   return (
     <div className="experience">
-        <h3>Experience</h3>
+        <h2>Experience</h2>
         <div className="exp1">
           <h4>Conducteur de Travaux Environnement et Matériaux - CDI - COLAS</h4>
           <h5>Janvier 2020 - Mai 2020</h5>

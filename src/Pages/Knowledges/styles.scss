@@ -1,0 +1,125 @@
+@import '../../settings.scss';
+
+.knowledges {
+    &__content {
+        min-height: $minHeight;
+        max-height: 90vh;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 30% 1fr 1fr 1fr;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: 
+            "L L E E"
+            "O O O H";
+    }
+
+    .formation, .experience, .skills-container {
+        background: $color-1;
+        padding: 0.8rem;
+        border-radius: $borderRadius;
+        margin: 0.3rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        font-family: $font-2;
+        color: $color-5;
+        text-transform: uppercase;
+    }
+
+    .experience {
+        grid-area: E;
+        overflow-y: scroll;
+
+    }
+    .formation {
+        grid-area: L;
+        overflow-y: scroll;
+    }
+    .hobbies {
+        grid-area: H;
+    }
+
+    .skills-container {
+        grid-area: O;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 0.5rem;
+
+        li {
+            color: $color-5;
+        }
+        .progressBar {
+            height: 0.4rem;
+            background: transparent;
+            border-radius: 50px;
+            position: relative;
+            margin-top: 0.2rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background: $color-4;
+                border-radius: 50px;
+                height: 0.4rem;
+                width: 0;
+                animation: line 2s ease-out forwards;
+
+                @keyframes line {
+                    to {
+                        width: 100%;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+    .container-otherskills {
+        display: flex;
+        justify-content: space-between;
+    }
+    .framework-list {
+       display: grid;
+       margin: 10px;
+       grid-template-columns: 50% 50%;
+       grid-template-areas: "E F";
+
+       &-1 {
+        grid-area: E ;
+       }
+    }
+    .years {
+        font-size: .65rem;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            width: 36%;
+            &:nth-child(2) {
+                text-align: right;
+                width: 20%;
+            }
+            &:nth-child(3) {
+                text-align: right;
+                width: 44%;
+            }
+            &:nth-child(2):before,
+            &:nth-child(3):before {
+                content: '';
+                background: rgba(180,179,179,0.5);
+                position: absolute;
+                height: 146px;
+                width: 1px;
+                transform: translate(9px, 19px);
+            }
+        }
+    }
+
+
+}
