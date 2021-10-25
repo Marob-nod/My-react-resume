@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Dosis:wght@700&family=Josefin+Sans:wght@100&family=Montserrat&family=Roboto&display=swap');
+
+$font-1: 'Andada Pro', sans-serif;
+$font-2: 'Dosis', sans-serif;
+$font-3: 'Josefin Sans', serif;
+
+$color-1: #F4E8C1;
+$color-2: #A0C1B8;
+$color-3: #709FB0;
+$color-4: #726A95;
+$color-5: #351F39;
+$white: #F5F5F5;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$minHeight: 95vh;
+$internalGutter: 15px;
+$externalGutter: 20px;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 1rem auto;
+    max-width: 1200px;
+    font-family: $font-1;
+    color: $black;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: $borderRadius;
+    //border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: linear-gradient(to top,$color-1 0%, $color-2 0%, $color-3 ) no-repeat;
+}
+button {
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+a:visited {
+    color: $black;
+}
+.home, .knowledges, .contact, .portfolio {
+    display: flex;
+    border-radius: $borderRadius;
+    //background-color: whitesmoke;
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+.home__content, .knowledges__content, .contact__content, .portfolio__content {
+    margin: 0.4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}
