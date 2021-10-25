@@ -5,6 +5,7 @@ import Project from '../Project';
 const ProjectList = () => {
 
     const [projects, setProjects] = useState(portfolioData)
+    console.log(projects)
     return (
         <div className="portfolio__content">
             <ul className="radio-display">

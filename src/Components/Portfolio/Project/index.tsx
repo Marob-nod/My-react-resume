@@ -16,7 +16,7 @@ const Project:FC<projectProps> = ({ name, languages, languagesIcons, source, inf
                 {languagesIcons.map(icon => <i className={icon} key={icon}></i>)}
             </div>
             <h3>{name}</h3>
-            <img src={picture} alt="" />
+            <img src={picture} alt="erreur" />
             <h4>{languages.map(language => <ul><li key={language}>{language}</li></ul>)}</h4>
             <span className="infos">
                 <i className="fas fa-plus-circle"></i>
