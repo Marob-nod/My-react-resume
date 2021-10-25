@@ -6,7 +6,7 @@ const OtherSkills = () => {
     <div className="otherskills">
         <div className="container-otherskills">
                 <div className="otherskills__frameworks">
-                    <h3>Techs</h3>
+                    <h2>Techs</h2>
                     <div className="framework-list">
                         <ul className="framework-list-1">
                             <li><i className="fas fa-check-square"></i>Git - GitHub</li>
@@ -24,7 +24,7 @@ const OtherSkills = () => {
                     </div>
                 </div>
                 <div className="otherskills__profil">
-                    <h3>Profil</h3>
+                    <h2>Profil</h2>
                     <div className="otherskills-list">
                         <ul>
                             <li><i className="fas fa-check-square"></i>Gestion de projet: Méthode agile</li>

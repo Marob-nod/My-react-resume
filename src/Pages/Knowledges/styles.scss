@@ -1,8 +1,15 @@
 @import '../../settings.scss';
 
+
+::-webkit-scrollbar {
+    background-color: transparent
+
+}
+
 .knowledges {
     &__content {
         min-height: $minHeight;
+        scrollbar-color: $black;
         max-height: 90vh;
         width: 100%;
         position: relative;
@@ -19,23 +26,45 @@
         padding: 0.8rem;
         border-radius: $borderRadius;
         margin: 0.3rem;
+
     }
     h2 {
         font-size: 1.4rem;
         margin-bottom: 1rem;
+       
         font-family: $font-2;
         color: $color-5;
         text-transform: uppercase;
     }
 
+    h5 {
+        padding-left: 10px;
+    }
+
     .experience {
         grid-area: E;
         overflow-y: scroll;
+        li {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        &__formation2__mines:first-child {
+            font-weight: 800;
+        }
 
     }
     .formation {
         grid-area: L;
         overflow-y: scroll;
+        padding: 0.8rem;
+        li {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+       
+
+        
+
     }
     .hobbies {
         grid-area: H;
@@ -46,13 +75,15 @@
 
         li {
             color: $color-5;
+            
         }
         .progressBar {
             height: 0.4rem;
             background: transparent;
             border-radius: 50px;
             position: relative;
-            margin-top: 0.2rem;
+            //margin-top: $internalGutter;
+            margin-bottom: $internalGutter;
 
             &:after {
                 content: '';
@@ -138,3 +169,4 @@
         grid-area: K;
     }
 }
+

@@ -1,8 +1,8 @@
 import './styles.scss';
-import React from 'react';
+
 import { useState } from 'react';
 import ProgressBar from '../../ProgressBar';
-import logoC from '../../../assets/logo-c.png';
+
 import logoCSS from '../../../assets/logo-css.png';
 import logoHtml from '../../../assets/logo-html.png';
 import logoJs from '../../../assets/logo-js.png';
