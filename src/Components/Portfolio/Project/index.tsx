@@ -36,6 +36,7 @@ const Project:FC<projectProps> = ({ name, languages, source, github, info, pictu
                     <div className="head">
                         <h2>{name}</h2>
                     </div>
+                    <div className="infos-text">{info}</div>
                     <div className="button" onClick={handleInfo}>Retourner sur la page</div>
                 </div>
             </div>}

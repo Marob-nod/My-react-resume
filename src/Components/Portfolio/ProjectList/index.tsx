@@ -8,9 +8,6 @@ const ProjectList = () => {
     console.log(projects)
     return (
         <div className="portfolio__content">
-            <ul className="radio-display">
-
-            </ul>
             <div className="projects">
                    <Project 
                         name="Lets Be Friends" 
@@ -20,21 +17,21 @@ const ProjectList = () => {
                         picture='/media/LBF-Project.png'
                         github="https://github.com/Marob-nod/Lets-Be-Friends/"
  
-                    />)
-                    <Project 
+                    />
+                    {/* <Project 
                         name="My React CV" 
                         languages="Javascript, React, TypeScript, SASS" 
                         source="https://letsbefriends.netlify.app/" 
                         info="Un CV dynamique pour en apprendre plus." 
                         picture='/media/mycv.png'
-                    />)
-                    <Project 
+                    /> */}
+                    {/* <Project 
                         name="Snake Game" 
                         languages="Javascript Vanilla, Canvas" 
                         source="https://github.com/Marob-nod/Snake-Nokia" 
                         info="Un jeu d'arcade intemporel avec différents niveaux" 
                         picture='/media/LBF-Project.png'
-                    />
+                    /> */}
                     <Project 
                         name="O'Recipes" 
                         languages="React Redux" 
