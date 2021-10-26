@@ -1,6 +1,4 @@
 import { FC, useState } from 'react';
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -23,11 +21,11 @@ const Project:FC<projectProps> = ({ name, languages, source, github, info, pictu
     return (
         <div className="project">
             <h3>{name}</h3>
-            <img src={picture} alt="photo-projet" onClick={handleInfo}/>
+            <img src={picture} alt="projet" onClick={handleInfo}/>
             <h4>{languages}</h4>
             <div className="infos">
                 <span className="" onClick={handleInfo}>
-                    <img src="/media/button-infos.png" alt="" />
+                    <img src="/media/button-infos.png" alt="more-infos" />
                 </span>
             </div>
             {showInfos && 

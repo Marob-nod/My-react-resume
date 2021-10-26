@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
-import { portfolioData } from '../../../data/portfolioData';
 import Project from '../Project';
 
 const ProjectList = () => {
 
-    const [projects, setProjects] = useState(portfolioData)
-    console.log(projects)
     return (
         <div className="portfolio__content">
             <div className="projects">

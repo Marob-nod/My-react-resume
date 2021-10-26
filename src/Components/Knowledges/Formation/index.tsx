@@ -1,7 +1,4 @@
 import './styles.scss';
-import logoMines from '../../../assets/logo-mines.png'
-import logoOclock from '../../../assets/logoOclock.png'
-import logoRouen from '../../../assets/logo-rouen.jpg';
 
 
 const Formation = () => {

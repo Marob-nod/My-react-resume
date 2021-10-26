@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
 import Sidebar from '../../Components/Sidebar';
 import './styles.scss';
 import linkedinLogo from '../../assets/linkedin.png'

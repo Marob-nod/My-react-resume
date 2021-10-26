@@ -1,6 +1,4 @@
-import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { ReactDOM } from 'react';
 import './App.css';
 import Home from '../Home';
 import Portfolio from '../Portfolio';
