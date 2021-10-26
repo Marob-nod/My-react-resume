@@ -1,7 +1,5 @@
 import { FC, useState } from 'react';
 
-
-
 interface projectProps {
     name: string;
     languages: string;

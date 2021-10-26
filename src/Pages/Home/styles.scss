@@ -3,16 +3,16 @@
 .home {
     &__content {
         background: linear-gradient(115deg, $color-2 0%, $color-4 100%);
-        //display: flex;
+        display: flex;
         text-align: left;
         align-items: center;
-        //min-height: $minHeight;
+        min-height: $minHeight;
         width: 100%;
-        min-height: 500px;
+        min-height: 95vh;
         border-radius: $borderRadius;
         position: relative;
-        overflow: hidden;
-        
+        //overflow: hidden;
+        //min-height: 100%;        
 
         &:after {
             content: '';
@@ -61,5 +61,26 @@
         }
 
 
+    }
+}
+
+@media (max-width: 560px) {
+    .home__content {
+        margin: 0;
+        ::-webkit-scrollbar {
+            overflow: hidden;
+        }
+        h1 {
+            padding: 0;            
+            font-size: 2.3rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        text-align: center justify;
+
+       p {
+           font-size: 0.8rem;
+       }
     }
 }

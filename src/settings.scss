@@ -4,6 +4,10 @@ $font-1: 'Andada Pro', sans-serif;
 $font-2: 'Dosis', sans-serif;
 $font-3: 'Josefin Sans', serif;
 
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
 $color-1: #F4E8C1;
 $color-2: #A0C1B8;
 $color-3: #709FB0;
@@ -23,6 +27,15 @@ $externalGutter: 20px;
     justify-content: center;
     align-items: center;
 }
+
+@mixin blur {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: $borderRadius;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,5 +83,12 @@ a:visited {
 
     @media screen and (max-width: 850px) {
         margin-left: 0 !important;
+        justify-content: center;
+        overflow: scroll;
+        height: 100%;
+
+        html {
+            height: 100%;
+        }
     }
 }
