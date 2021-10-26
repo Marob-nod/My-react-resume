@@ -26,6 +26,7 @@
         padding: 0.8rem;
         border-radius: $borderRadius;
         margin: 0.3rem;
+        @include blur(#137BCF);
 
     }
     h2 {
