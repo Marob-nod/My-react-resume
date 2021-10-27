@@ -8,11 +8,11 @@ $phone: 320px;
 $tablet: 768px;
 $desktop: 1024px;
 
-$color-1: #F4E8C1;
-$color-2: #A0C1B8;
-$color-3: #709FB0;
-$color-4: #726A95;
-$color-5: #351F39;
+$color-1: #EEEEEE;
+$color-2: #00ADB5;
+$color-3: #393E46;
+$color-4: orange;
+$color-5: #222831;
 $white: #F5F5F5;
 $black: #333;
 
@@ -54,7 +54,7 @@ body {
     -webkit-backdrop-filter: blur( 9.5px );
     border-radius: $borderRadius;
     //border: 1px solid rgba( 255, 255, 255, 0.18 );
-    background: linear-gradient(to top,$color-1 0%, $color-2 0%, $color-3 ) no-repeat;
+    background: linear-gradient(to top,$color-1 0%, $color-1 0%, $color-5 ) no-repeat;
 }
 button {
     cursor: pointer;
@@ -74,7 +74,7 @@ a:visited {
 .home, .knowledges, .contact, .portfolio {
     display: flex;
     border-radius: $borderRadius;
-    //background-color: whitesmoke;
+    background-color: transparent;
     @media screen and (max-width: 850px) {
         display: block !important;
     }

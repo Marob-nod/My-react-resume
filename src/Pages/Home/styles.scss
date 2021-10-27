@@ -1,8 +1,9 @@
 @import '../../styles.scss';
 
 .home {
+
     &__content {
-        background: linear-gradient(115deg, $color-2 0%, $color-4 100%);
+        background: linear-gradient(150deg, $color-4 0%, $color-1 100%);
         display: flex;
         text-align: left;
         align-items: center;
@@ -41,7 +42,7 @@
             }
             h2 {
                 font-size: 3rem;
-                color: $color-4;
+                color: $color-1;
                 text-shadow: 1px 4px 1px $black;
                 padding: 20px;
             }

@@ -7,6 +7,7 @@
 }
 
 .knowledges {
+    text-align: justify;
     &__content {
         min-height: $minHeight;
         scrollbar-color: $black;
@@ -34,12 +35,13 @@
         margin-bottom: 1rem;
        
         font-family: $font-2;
-        color: $color-5;
+        color: $color-4;
         text-transform: uppercase;
     }
 
     h5 {
         padding-left: 10px;
+        font-weight: 800;
     }
 
     .experience {
@@ -72,16 +74,16 @@
         padding-top: 0.5rem;
 
         li {
-            color: $color-5;
-            
+            color: $color-5;            
         }
         .progressBar {
-            height: 0.4rem;
             background: transparent;
             border-radius: 50px;
             position: relative;
             //margin-top: $internalGutter;
             margin-bottom: $internalGutter;
+
+            
 
             &:after {
                 content: '';
@@ -155,6 +157,10 @@
     .skills {
         grid-area: I;
         margin-right: $externalGutter;
+
+        .languages-list img {
+            height: 25px;
+        }
     }
     .otherskills__frameworks {
         grid-area: J;
@@ -166,14 +172,16 @@
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .knowledges {
         font-size: 0.7rem;
     }    
-    .skills-container img {
+    .languages-list img {
         width: 0px;
+        height: 0px;
     }
+
     .progressBar {
-        height: 0rem;
+        margin-bottom: 0px;
     }
 }
