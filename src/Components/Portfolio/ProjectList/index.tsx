@@ -6,7 +6,7 @@ const ProjectList = () => {
         <div className="portfolio__content">
             <div className="projects">
                    <Project 
-                        name="Lets Be Friends" 
+                        name="LBF - Page d'accueil" 
                         languages="Javascript, React, Redux, NodeJS, MongoDB, Leaflet, ..." 
                         source="https://letsbefriends.netlify.app/" 
                         info="Application Web pour renconter ses amis tout en apprenant une nouvelle langue ! Projet collaboratif avec 4 autres développeurs. N'hésitez pas à me contacter pour d'amples détails." 
@@ -14,20 +14,20 @@ const ProjectList = () => {
                         github="https://github.com/Marob-nod/Lets-Be-Friends/"
  
                     />
-                    {/* <Project 
-                        name="My React CV" 
+                    { <Project 
+                        name="LBF - Recherche Evenement" 
                         languages="Javascript, React, TypeScript, SASS" 
-                        source="https://letsbefriends.netlify.app/" 
-                        info="Un CV dynamique pour en apprendre plus." 
+                        source="https://letsbefriends.netlify.app/searchevent" 
+                        info="Une page pour pouvoir rechercher puis participer à des évènements culturels/sportifs autour de chez soi" 
                         picture='/media/mycv.png'
-                    /> */}
-                    {/* <Project 
+                    /> }
+                    { <Project 
                         name="Snake Game" 
                         languages="Javascript Vanilla, Canvas" 
                         source="https://github.com/Marob-nod/Snake-Nokia" 
                         info="Un jeu d'arcade intemporel avec différents niveaux" 
                         picture='/media/LBF-Project.png'
-                    /> */}
+                    /> }
                     <Project 
                         name="O'Recipes" 
                         languages="React Redux" 
