@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# My-react-resume
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started
+
+This project was bootstrapped with Create React App.
 
 ## Available Scripts
 
@@ -44,9 +46,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+<<<<<<< HEAD
 # My-react-resume
 
 # Change needed
 - Font family
 - Style CSS in general
 - Add projects
+=======
+
+>>>>>>> cdac8104f41e913aceb6f6844da97bd4cbaef937
