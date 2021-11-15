@@ -45,3 +45,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 # My-react-resume
+
+# Change needed
+- Font family
+- Style CSS in general
+- Add projects
