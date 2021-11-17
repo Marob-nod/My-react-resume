@@ -11,9 +11,10 @@ const Home = () => {
           <h1>Robin Marien</h1>
           <h2>Développeur Frontend</h2>
           <div className="home__content__text__description"></div>
-            <p>🚀 Freshly graduated from my engineering school, I specialized in the Web development field. Integration addict, passionate and self-taught, I am tireless when it comes to coding </p> <p>
+            <p>🚀 Récemment diplômé de mon école d'ingénieur des Mines de Douai et fort d'une première experience professionnelle, je suis à présent spécialisé dans le domaine du développement Web. 
+              <br></br><br></br>Grâce à une formation de qualité de l'Ecole O'Clock ainsi qu'un apprentissage autonome, j'ai développé de nombreuses compétences dans le domaine du frontend notamment. <br></br><br></br>Ma technonolgie de prédilection: le merveilleux framework React.JS !</p> <p>
 
-              💡 I am currently looking for assignments on web application development, front-end part principaly. I remain at your disposal for any questions or proposals.
+              💡 Après avoir participé à plusieurs projets "open-source" collectifs et individuels, je suis à la recherche d'un challenge professionnel pour mettre en pratique mon savoir-faire tout en développant de nouvelles compétences. 
             </p>
         </div>
       </div>
