@@ -12,11 +12,6 @@ library.add(fab)
 
 function App() {
 
-
-  const sum = (a: any, b: any) => {
-    const res = a + b
-    return res;
-  }
   return (
     <div className="App">
       <Switch>
