@@ -27,8 +27,8 @@ const Project:FC<projectProps> = ({ name, languages, source, github, info, pictu
                 </span>
             </div>
             {showInfos && 
-            <div className="show-infos">
-                <div className="infos-content">
+            <div className="showInfos">
+                <div className="infosContent">
                     <div className="head">
                         <h2>{name}</h2>
                     </div>

@@ -7,6 +7,7 @@ import contactIcon from '../../assets/contact.png'
 import knowledgeIcon from '../../assets/une-analyse.png'
 import linkedinIcon from '../../assets/linkedin.png'
 import githubIcon from '../../assets/github.png'
+import projectIcon from '../../assets/production.png'
 
 
 const Sidebar = () => {
@@ -33,12 +34,12 @@ const Sidebar = () => {
               <span>Compétences</span>
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink exact to="/portfolio" activeClassName="navActive">
               <img src={projectIcon} className="sidebar__navigation-projectIcon" alt="project-Icon" /> 
               <span>Mes projets</span>
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink exact to="/contact" activeClassName="navActive">
               <img src={contactIcon} className="sidebar__navigation-contactIcon" alt="contact-Icon" /> 

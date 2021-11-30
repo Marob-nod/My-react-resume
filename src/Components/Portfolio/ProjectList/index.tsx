@@ -3,7 +3,7 @@ import Project from '../Project';
 const ProjectList = () => {
 
     return (
-        <div className="portfolio__content">
+        <div className="portfolioContent">
             <div className="projects">
                    <Project 
                         name="LBF - Page d'accueil" 
