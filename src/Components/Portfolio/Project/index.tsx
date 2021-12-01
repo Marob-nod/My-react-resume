@@ -27,7 +27,7 @@ const Project:FC<projectProps> = ({ features, name, languages, source, github, i
 
     useEffect(() => {
         sourceTest()
-    }, []);
+    },);
 
     return (
         <div className="project">
