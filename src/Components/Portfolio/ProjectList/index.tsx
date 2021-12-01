@@ -7,7 +7,7 @@ const ProjectList = () => {
             <div className="projects">
                    <Project 
                         name="LBF - Page d'accueil" 
-                        languages="Javascript, React, Redux, NodeJS, MongoDB, Leaflet, ..." 
+                        languages="Javascript, React, Redux, NodeJS, PostgreSQL" 
                         source="https://letsbefriends.netlify.app/" 
                         info="Application Web pour renconter ses amis tout en apprenant une nouvelle langue ! Projet collaboratif avec 4 autres développeurs. N'hésitez pas à me contacter pour d'amples détails." 
                         picture='/media/LBF-Project.png'

@@ -22,7 +22,7 @@ const Project:FC<projectProps> = ({ name, languages, source, github, info, pictu
             <img src={picture} alt="projet" onClick={handleInfo}/>
             <h4>{languages}</h4>
             <div className="infos">
-                <span className="" onClick={handleInfo}>
+                <span className="more-button" onClick={handleInfo}>
                     <img src="/media/button-infos.png" alt="more-infos" />
                 </span>
             </div>

@@ -2,11 +2,11 @@
 
 .portfolio {
   .portfolioContent {
-    width: 100%;
+    //width: 100%;
     display: grid;
     min-height: $minHeight;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 0px 1fr;
     grid-template-areas: 
       "1"
       "2";
@@ -87,7 +87,7 @@
     .project {
       background: $color-1;
       border-radius: $borderRadius;
-      margin: 0.5rem 0 0 0;
+      margin: 0.5rem 0 0.5rem 0;
       text-align: center;
       width: 32%;
       max-height: 50%;
@@ -121,6 +121,10 @@
       @include verticalCenter;
       justify-content: left;
 
+    }
+
+    h4 {
+      margin: 1rem;
     }
     img {
       grid-area: 3;
@@ -164,8 +168,8 @@
       .infosContent {
         position: relative;
         top: 25%;
-        width: 600px;
-        margin: 0 auto;
+        //width: 600px;
+        margin: 3rem;
         color: $color-5;
         background: $color-1;
         border-radius: $borderRadius;
@@ -196,6 +200,7 @@
         background: $color-5;
         border-radius: $borderRadius;
         padding: 1rem;
+        margin-top: 1rem;
         transition: .2s;
 
         &:hover {
@@ -238,8 +243,13 @@
       grid-template-rows: 30px 40px 80px 40px !important;
       width: 98% !important;
 
+      h4 {
+        font-size: small;
+      }
+
       img {
         height: 100% !important;
+        width: auto;
       }
     }
   }
