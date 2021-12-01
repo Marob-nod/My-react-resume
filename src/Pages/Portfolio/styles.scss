@@ -198,6 +198,7 @@
         justify-content: space-around;
         margin: 1rem 0;
       }
+      
       h2 {
         //text-align: left;
         margin-bottom: 1rem;
@@ -245,6 +246,17 @@
     }
   }
 }
+
+@media (max-width: 870px) {
+  .head {
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    .sourceCode, .siteWeb {
+      font-size: 0.5em ;
+    }
+  }
+}
+
 @media (max-width: 520px){
   .radioDisplay {
     display: none !important;
@@ -264,9 +276,21 @@
         font-size: 0.7em;
       }
 
-      img {
+      img, video {
         height: 100% !important;
         width: auto;
+      }
+
+      .infos img {
+        width: 20px;
+      }
+
+      .head {
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        .sourceCode, .siteWeb {
+          font-size: 0.5em ;
+        }
       }
     }
   }

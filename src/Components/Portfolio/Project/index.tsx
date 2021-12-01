@@ -49,12 +49,12 @@ const Project:FC<projectProps> = ({ video, features, name, languages, source, gi
                 <div className="infosContent">
                     <div className="head">
                         <h2>{name}</h2>
-                        <div className="sourceCode">
-                            <a href={github} rel="noopener_noreferrer" className="button" target="_blanck" >Code Source</a>
-                        </div>
-                        {showSiteButton && <div className="siteWeb">
-                            <a href={source} rel="noopener_noreferrer" className="button" target="_blanck" >Site web</a>
-                        </div>}
+                            <div className="sourceCode">
+                                <a href={github} rel="noopener_noreferrer" className="button" target="_blanck" >Code Source</a>
+                            </div>
+                            {showSiteButton && <div className="siteWeb">
+                                <a href={source} rel="noopener_noreferrer" className="button" target="_blanck" >Site web</a>
+                            </div>}    
                     </div>
                     <h4>Descriptif projet</h4>
                     <div className="infos-text">{info}</div>
