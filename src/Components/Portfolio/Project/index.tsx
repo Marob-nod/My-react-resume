@@ -8,12 +8,14 @@ interface projectProps {
     picture: string;
     github?: string;
     features: string
+    video?: string
 }
 
-const Project:FC<projectProps> = ({ features, name, languages, source, github, info, picture }) => {
+const Project:FC<projectProps> = ({ video, features, name, languages, source, github, info, picture }) => {
 
     const [showInfos, setShowInfos] = useState(false);
     const [showSiteButton, setShowSiteButton] = useState(false)
+    const [showVideo, setShowVideo] = useState(false)
 
     const handleInfo = () => {
         setShowInfos(!showInfos)
@@ -22,6 +24,9 @@ const Project:FC<projectProps> = ({ features, name, languages, source, github, i
     const sourceTest = () => {
         if (source !== undefined) {
             setShowSiteButton(true)
+        }
+        if (video !== undefined) {
+            setShowVideo(true)
         }
     }
 
@@ -32,7 +37,7 @@ const Project:FC<projectProps> = ({ features, name, languages, source, github, i
     return (
         <div className="project">
             <h3>{name}</h3>
-            <img src={picture} alt="projet" onClick={handleInfo}/>
+            {showVideo ? <video controls autoPlay muted loop src={video} /> : <img src={picture} alt="projet" onClick={handleInfo}/>}
             <h4>{languages}</h4>
             <div className="infos">
                 <span className="more-button" onClick={handleInfo}>

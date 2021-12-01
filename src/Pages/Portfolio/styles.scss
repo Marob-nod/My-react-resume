@@ -83,6 +83,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: hidden;
 
     .project {
       background: $color-1;
@@ -127,7 +128,7 @@
     h4 {
       margin: 1rem;
     }
-    img {
+    img, video {
       grid-area: 3;
       object-fit: cover;
       margin: 0 auto;
@@ -148,12 +149,14 @@
 
       img {
         width: 40px;
+        height: 40px;
         border-radius: 20px;
       }
 
       &:hover {
         transform: scale(1.1);
-        transform: rotate(-90deg);
+        transform: rotateZ(90deg);
+        //overflow: hidden;
       }
     }
     .showInfos {

@@ -54,7 +54,8 @@ const ProjectList = () => {
                         languages="Javascript ThreeJS HTML" 
                         github="https://github.com/Marob-nod/Space-website/tree/master"
                         info="Projet introductif à la librairie ThreeJS pour animations 3D - Planètes gravitationnant autour du soleil" 
-                        picture='/media/gsoc-website.png'
+                        picture='/media/3d-project.png'
+                        video='/media/screen-capture.webm'
                         features="Caméra/Scene/Renderer - Texture Mapping - Animation following the scroll - Canvas"
                     />
             </div>
