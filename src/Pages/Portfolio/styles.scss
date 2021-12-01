@@ -119,8 +119,9 @@
       font-family: $font-2;
       font-size: 1.65rem;
       @include verticalCenter;
-      justify-content: left;
-
+      //justify-content: left;
+      color: $color-4;
+      margin-bottom: 2rem;
     }
 
     h4 {
@@ -177,7 +178,11 @@
         box-shadow: 0 10px 10px #333;
         animation: popup .6s ease forwards;
         transform: scale(0);
-        transform-origin: center;
+        transform-origin: center;    
+        
+        .infos-text {
+          font-size: 0.9em;
+        }
 
         @keyframes popup {
           to {
@@ -191,9 +196,14 @@
         margin: 1rem 0;
       }
       h2 {
-        text-align: left;
+        //text-align: left;
         margin-bottom: 1rem;
       }
+
+      h4 {
+        color: $color-4;
+      }
+
       .button {
         cursor: pointer;
         color: $color-1;
@@ -243,8 +253,12 @@
       grid-template-rows: 30px 40px 80px 40px !important;
       width: 98% !important;
 
+      h3 {
+        margin-bottom: 0;
+        font-size: 1em;
+      }
       h4 {
-        font-size: small;
+        font-size: 0.7em;
       }
 
       img {
