@@ -15,6 +15,7 @@ const Project:FC<projectProps> = ({ video, features, name, languages, source, gi
 
     const [showInfos, setShowInfos] = useState(false);
     const [showSiteButton, setShowSiteButton] = useState(false)
+    const [showGithubButton, setShowGithubButton] = useState(false)
     const [showVideo, setShowVideo] = useState(false)
 
     const handleInfo = () => {
@@ -27,6 +28,9 @@ const Project:FC<projectProps> = ({ video, features, name, languages, source, gi
         }
         if (video !== undefined) {
             setShowVideo(true)
+        }
+        if (github !== undefined) {
+            setShowGithubButton(true)
         }
     }
 
@@ -49,9 +53,9 @@ const Project:FC<projectProps> = ({ video, features, name, languages, source, gi
                 <div className="infosContent">
                     <div className="head">
                         <h2>{name}</h2>
-                            <div className="sourceCode">
+                            {showGithubButton && <div className="sourceCode">
                                 <a href={github} rel="noopener_noreferrer" className="button" target="_blanck" >Code Source</a>
-                            </div>
+                            </div>}
                             {showSiteButton && <div className="siteWeb">
                                 <a href={source} rel="noopener_noreferrer" className="button" target="_blanck" >Site web</a>
                             </div>}    

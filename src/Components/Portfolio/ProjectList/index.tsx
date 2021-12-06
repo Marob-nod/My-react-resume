@@ -11,14 +11,14 @@ const ProjectList = () => {
                         source="https://letsbefriends.netlify.app/" 
                         info="Application Web pour rencontrer ses amis et faire de nouvelles connaissances tout en apprenant une nouvelle langue ! Projet collaboratif avec 4 autres développeurs." 
                         picture='/media/LBF-Project.png'
-                        github="https://github.com/Marob-nod/Lets-Be-Friends/"
+                        //github="https://github.com/Marob-nod/Lets-Be-Friends/"
                         features="Modals avec formulaire de Login/Signup - Carroussel - Style CSS Ombres coulissantes - Menu navigation coulissant"
  
                     />
                      <Project 
                         name="LBF - Recherche Evenement" 
                         languages="Javascript React Redux CSS Leaflet " 
-                        github="https://github.com/Marob-nod/Lets-Be-Friends/"
+                        //github="https://github.com/Marob-nod/Lets-Be-Friends/"
                         info="Une page pour pouvoir rechercher puis participer à des évènements culturels/sportifs autour de chez soi" 
                         picture='/media/search-event-lbf.png'
                         features="Composants customisés (cartes évènements) - Recherche Geolocalisation - Recherche API avec filtres"
@@ -26,16 +26,16 @@ const ProjectList = () => {
                      <Project 
                         name="Contribution au site Web d'ACM de l'UCLA" 
                         languages="CSS HTML React" 
-                        github="https://github.com/Marob-nod/Snake-Nokia" 
+                        //github="https://github.com/Marob-nod/Snake-Nokia" 
                         source="https://www.uclaacm.com"
-                        info="L'ACM, Association for Computing Machinery, est la plus grande organisation informatique étudiante de l'université de Californie à Los Angeles, USA. Leur site internet propose un très latge contenu sur les activités étudiantes, à savoir: ateliers, conférences, compétitions de programmation, hackatons, ..." 
+                        info="L'ACM, Association for Computing Machinery, est la plus grande organisation informatique étudiante de l'université de Californie à Los Angeles, USA. Leur site internet propose un très large contenu sur les activités étudiantes, à savoir: ateliers, conférences, compétitions de programmation, hackatons, ..." 
                         picture='/media/ucla-website.png'
                         features=" Actualisation du menu de la version mobile du site - Media Queries - CSS"
                     /> 
                     <Project 
                         name="O'Recipes" 
                         languages="React Redux CSS Semantic UI" 
-                        source="https://github.com/Marob-nod/Snake-Nokia" 
+                        //source="https://github.com/Marob-nod/Snake-Nokia" 
                         info="Blog Recettes de Cuisine" 
                         picture='/media/resultat.png'
                         features="Syteme de recettes favorites - Collecter puis afficher données de l'API"
